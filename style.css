@@ -8,7 +8,8 @@ body{
     flex-direction: column;
     align-items: center;
     width: 100dvw;
-    height: 100dvh;
+    height: calc(var(--real-vh) * 100);
+
     /* background: linear-gradient(to right, #2c003e, #5b0e5b, #a94438, #ec8c2d); */
     background: url("./img/Leonardo_Phoenix_10_A_tranquil_rural_landscape_during_sunset_w_2.jpg");
     background-size: cover;
