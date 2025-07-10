@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(to right, #2c003e, #5b0e5b, #a94438, #ec8c2d);
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0F0F1A, #3C1B4F, #7C2C6C, #D16A5A, #FBA94C);
+    border-radius: 0 0 41px; 
+    padding: 11px 1px;
+    position: relative;
+    border-bottom: 1.5px solid rgb(207, 207, 205);
+}
+.hantu{
+    font-size: 1.5rem;
+}
+.logo img{
+    width: 11rem;
+}
+nav{
+    position: absolute;
+    top: 35%;
+    right: 7px;
+    display: none;
+    align-items:center ;
+    flex-direction: column;
+    padding: 4px;
+    gap: 7px;
+    animation: navbar 1s ease;
+}
+@keyframes navbar {
+    0%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.linku a{
+    gap: 3px;
+}
+.linku{
+    border: 1px solid white;
+    padding: 5px;
+    width: 100%;
+    border-radius: 37px;
+}
+.linku img{
+    width: 20px;
+    color: aliceblue;
+}
+.tombol{
+    border: none;
+    cursor: pointer;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: arial,sans-serif;
+    margin-left: 3px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+#btn{
+    border: none;
+    background: none;
+    color: white;
+}
+.tombol{
+    font-size: 1.3rem;
+    position: absolute;
+    right: 11px;
+    transform: translateY(-50%);
+}
