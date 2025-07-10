@@ -180,15 +180,19 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    width: 100dvw;
+    min-height: 100dvh; /* dynamic viewport height */
+     overscroll-behavior-y: contain;
+  overscroll-behavior-x: none;
     /* background: linear-gradient(to right, #2c003e, #5b0e5b, #a94438, #ec8c2d); */
     background: url("./img/retouch_2025071018324090.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
 
-
+html, body {
+  overscroll-behavior: none;
+}
 header{
     width: 100%;
     display: flex;
@@ -331,5 +335,4 @@ h1{
 ol,ul{
     margin-left: 17px;
 }
-
 }
