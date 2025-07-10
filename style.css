@@ -4,19 +4,29 @@
     box-sizing: border-box;
 }
 body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100vw;
     height: 100vh;
     position: relative;
-    background: linear-gradient(to right, #2c003e, #5b0e5b, #a94438, #ec8c2d);
+    /* background: linear-gradient(to right, #2c003e, #5b0e5b, #a94438, #ec8c2d); */
+    background: url(./img/Leonardo_Phoenix_10_A_peaceful_rural_landscape_with_green_rice_0\ \(1\).jpg);
+    background-size: cover;
+    
 }
+
+
 header{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #0F0F1A, #3C1B4F, #7C2C6C, #D16A5A, #FBA94C);
+    /* background: linear-gradient(135deg, #0F0F1A, #3C1B4F, #7C2C6C, #D16A5A, #FBA94C); */
+    backdrop-filter: blur(10px);
     border-radius: 0 0 41px; 
     padding: 11px 1px;
-    position: relative;
+    position: fixed;
     border-bottom: 1.5px solid rgb(207, 207, 205);
 }
 .hantu{
@@ -24,6 +34,10 @@ header{
 }
 .logo img{
     width: 11rem;
+}
+h1{
+    font-family: arial,sans-serif;
+    color: white;
 }
 nav{
     position: absolute;
@@ -35,6 +49,7 @@ nav{
     padding: 4px;
     gap: 7px;
     animation: navbar 1s ease;
+    z-index: 7;
 }
 @keyframes navbar {
     0%{
@@ -52,6 +67,7 @@ nav{
     padding: 5px;
     width: 100%;
     border-radius: 37px;
+    backdrop-filter: blur(20px);
 }
 .linku img{
     width: 20px;
@@ -72,13 +88,25 @@ nav a{
     align-items: center;
 }
 #btn{
+    position: absolute;
+    z-index: 1;
     border: none;
     background: none;
     color: white;
+    right: 7px;
 }
 .tombol{
-    font-size: 1.3rem;
-    position: absolute;
-    right: 11px;
+    font-size: 1.3rem;    
     transform: translateY(-50%);
+}
+#dusun{
+    width: 80%;
+    padding: 33px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 200px;
+    color: white;
+    border: 1px solid ;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
 }
