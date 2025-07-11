@@ -52,8 +52,8 @@ h1{
     border-radius: 7px;
 }
 nav{
-    background: green;
-    border: 1px solid;
+    background: rgba(0, 128, 0, 0.233);
+    border: 1px solid greenyellow;
     border-radius: 11px;
     position: absolute;
     top: 211px;
